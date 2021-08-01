@@ -24,7 +24,7 @@ This module will help you to work with modal dialogs in your project
   <a href='https://travis-ci.org/chantouchsek/vuetify-dialogue'><img src='https://travis-ci.org/chantouchsek/vuetify-dialogue.svg?branch=master' /></a>
 </p>
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fchantouchsek%2Fvuetify-dialog.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fchantouchsek%2Fvuetify-dialog?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fchantouchsek%2Fvuetify-dialogue.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fchantouchsek%2Fvuetify-dialogue?ref=badge_large)
 
 ## Vuedl module documentation
 
