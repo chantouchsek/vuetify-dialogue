@@ -22,7 +22,7 @@
     />
     <dialog-actions
       :actions="actions"
-      v-bind="actionOptions"
+      v-bind="getDialogOptions"
     />
   </v-card>
 </template>
@@ -34,6 +34,7 @@ import Iconable from '../mixins/iconable'
 import Translatable from '../mixins/translatable'
 import DialogActions from './DialogActions.vue'
 import { VCard, VCardText, VToolbar, VToolbarTitle, VIcon } from 'vuetify/lib'
+import defu from 'defu'
 
 export default {
   components: {
@@ -50,6 +51,9 @@ export default {
     actionOptions: Object
   },
   computed: {
+    getDialogOptions () {
+      return defu({ i18n: this.i18n }, ...this.actionOptions)
+    },
     getText () {
       if (typeof this.text !== 'function') {
         return this.getTranslate(this.text)

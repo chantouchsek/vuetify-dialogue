@@ -18,7 +18,7 @@
       v-if="actions"
       ref="actions"
       :actions="actions"
-      v-bind="actionOptions"
+      v-bind="getDialogOptions"
       :handler="handler"
     />
     <slot name="footer" />
@@ -26,13 +26,14 @@
 </template>
 
 <script>
-
 import DialogActions from './DialogActions.vue'
-
 import { VCard, VCardTitle, VCardText } from 'vuetify/lib'
+import Translatable from '../mixins/translatable'
+import defu from 'defu'
 
 export default {
   inheritAttrs: false,
+  mixins: [Translatable],
   components: {
     DialogActions,
     VCard,
@@ -52,6 +53,11 @@ export default {
       })
     },
     handler: Function
+  },
+  computed: {
+    getDialogOptions () {
+      return defu({ i18n: this.i18n }, ...this.actionOptions)
+    }
   },
   methods: {
     trigger (name) {

@@ -24,12 +24,13 @@
 
 <script>
 import Actionable from 'vuedl/src/mixins/actionable'
+import Translatable from '../mixins/translatable'
 import DialogAction from './DialogAction.vue'
 import { VSpacer, VCardActions } from 'vuetify/lib'
 
 export default {
   components: { DialogAction, VSpacer, VCardActions },
-  mixins: [Actionable],
+  mixins: [Actionable, Translatable],
   props: {
     component: [String, Object],
     color: String,
@@ -61,7 +62,7 @@ export default {
     getActionProps (action) {
       const res = {
         component: action.component || this.component,
-        text: action.text
+        text: this.getTranslate(action.text)
       }
       this.nestedProps.forEach(key => {
         if (action[key] || this[key]) {

@@ -22,11 +22,12 @@
   </component>
 </template>
 <script>
-
 import { VIcon, VBtn } from 'vuetify/lib'
+import Translatable from '../mixins/translatable'
 
 export default {
   components: { VIcon, VBtn },
+  mixins: [Translatable],
   props: {
     attrs: Object,
     component: {
@@ -44,6 +45,9 @@ export default {
   },
   computed: {
     actionText () {
+      if (typeof this.text !== 'function') {
+        return this.getTranslate(this.text)
+      }
       return typeof this.text === 'function' ? this.text() : this.text
     }
   }
