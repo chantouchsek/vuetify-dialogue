@@ -23,7 +23,7 @@ describe('manager', () => {
   test('Test default prompt', async () => {
     const dialog = await manager.prompt({
       text: 'Test prompt',
-      tytle: 'Title'
+      title: 'Title'
     })
     await sleep(100)
     expect(dialog.element).toMatchSnapshot()
@@ -35,7 +35,7 @@ describe('manager', () => {
   test('Prompt confirm', async () => {
     const dlg = await manager.prompt({
       text: 'Test prompt',
-      tytle: 'Title',
+      title: 'Title',
       value: 'test'
     })
     await sleep(100)

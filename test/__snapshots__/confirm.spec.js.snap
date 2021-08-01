@@ -24,7 +24,7 @@ exports[`manager Check confirm 1`] = `
        
       <button
         action-key="ok"
-        class="v-btn v-btn--contained theme--light v-size--default"
+        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
         type="button"
       >
         <span
@@ -39,7 +39,7 @@ exports[`manager Check confirm 1`] = `
       </button>
       <button
         action-key="cancel"
-        class="v-btn v-btn--contained theme--light v-size--default"
+        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
         type="button"
       >
         <span
@@ -81,7 +81,7 @@ exports[`manager Check confirm with action icons 1`] = `
        
       <button
         action-key="false"
-        class="v-btn v-btn--contained v-btn--rounded theme--light v-size--default info"
+        class="v-btn v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--light v-size--default info"
         color="info"
         rounded="true"
         type="button"
@@ -104,7 +104,7 @@ exports[`manager Check confirm with action icons 1`] = `
       </button>
       <button
         action-key="true"
-        class="v-btn v-btn--contained theme--light v-size--default"
+        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
         type="button"
       >
         <span
@@ -152,7 +152,7 @@ exports[`manager Check confirm with btns true|false 1`] = `
        
       <button
         action-key="true"
-        class="v-btn v-btn--contained theme--light v-size--default"
+        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
         type="button"
       >
         <span
@@ -167,7 +167,7 @@ exports[`manager Check confirm with btns true|false 1`] = `
       </button>
       <button
         action-key="false"
-        class="v-btn v-btn--contained theme--light v-size--default"
+        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
         type="button"
       >
         <span
@@ -209,7 +209,7 @@ exports[`manager Check confirm with handler functions 1`] = `
        
       <button
         action-key="false"
-        class="v-btn v-btn--contained theme--light v-size--default"
+        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
         type="button"
       >
         <span
@@ -224,7 +224,7 @@ exports[`manager Check confirm with handler functions 1`] = `
       </button>
       <button
         action-key="true"
-        class="v-btn v-btn--contained theme--light v-size--default"
+        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
         type="button"
       >
         <span
@@ -270,9 +270,7 @@ exports[`manager Test confirm without icon 1`] = `
         <div
           class="v-toolbar__title"
         >
-          
-      Title
-    
+          Title
         </div>
       </div>
     </header>
@@ -308,9 +306,7 @@ exports[`manager Test default confirm 1`] = `
         <div
           class="v-toolbar__title"
         >
-          
-      Title
-    
+          Title
         </div>
       </div>
     </header>

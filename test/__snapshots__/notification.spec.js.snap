@@ -27,9 +27,7 @@ exports[`manager Test error notification with top-left position 1`] = `
           <div
             class="mr-2"
           >
-            
-      Test notification
-    
+            Test notification
           </div>
            
           <!---->
@@ -37,7 +35,7 @@ exports[`manager Test error notification with top-left position 1`] = `
       </div>
       <button
         aria-label="Close"
-        class="v-alert__dismissible v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--small"
+        class="v-alert__dismissible v-btn v-btn--icon v-btn--round theme--dark v-size--small"
         type="button"
       >
         <span
@@ -83,9 +81,7 @@ exports[`manager Test info notification 1`] = `
           <div
             class="mr-2"
           >
-            
-      Test notification
-    
+            Test notification
           </div>
            
           <!---->
@@ -93,7 +89,7 @@ exports[`manager Test info notification 1`] = `
       </div>
       <button
         aria-label="Close"
-        class="v-alert__dismissible v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--small"
+        class="v-alert__dismissible v-btn v-btn--icon v-btn--round theme--dark v-size--small"
         type="button"
       >
         <span
@@ -139,9 +135,7 @@ exports[`manager Test notification component 1`] = `
           <div
             class="mr-2"
           >
-            
-      Test notification
-    
+            Test notification
           </div>
            
           <!---->
@@ -149,7 +143,7 @@ exports[`manager Test notification component 1`] = `
       </div>
       <button
         aria-label="Close"
-        class="v-alert__dismissible v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--small"
+        class="v-alert__dismissible v-btn v-btn--icon v-btn--round theme--dark v-size--small"
         type="button"
       >
         <span
@@ -195,9 +189,7 @@ exports[`manager Test success notification 1`] = `
           <div
             class="mr-2"
           >
-            
-      Test notification
-    
+            Test notification
           </div>
            
           <!---->
@@ -205,7 +197,7 @@ exports[`manager Test success notification 1`] = `
       </div>
       <button
         aria-label="Close"
-        class="v-alert__dismissible v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--small"
+        class="v-alert__dismissible v-btn v-btn--icon v-btn--round theme--dark v-size--small"
         type="button"
       >
         <span
@@ -251,9 +243,7 @@ exports[`manager Test warning notification with bottom-right position 1`] = `
           <div
             class="mr-2"
           >
-            
-      Test notification
-    
+            Test notification
           </div>
            
           <!---->
@@ -261,7 +251,7 @@ exports[`manager Test warning notification with bottom-right position 1`] = `
       </div>
       <button
         aria-label="Close"
-        class="v-alert__dismissible v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--small"
+        class="v-alert__dismissible v-btn v-btn--icon v-btn--round theme--dark v-size--small"
         type="button"
       >
         <span

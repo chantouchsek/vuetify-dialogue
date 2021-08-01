@@ -18,16 +18,12 @@
 </template>
 
 <script>
-
 import Confirmable from 'vuedl/src/mixins/confirmable'
 import DialogCard from './DialogCard.vue'
 import { VTextField } from 'vuetify/lib'
 
 export default {
-  components: {
-    DialogCard,
-    VTextField
-  },
+  components: { DialogCard, VTextField },
   layout: 'default',
   mixins: [Confirmable],
   props: {
@@ -61,7 +57,7 @@ export default {
         this.$emit('submit', action.key)
       }
       const valid = this.rules ? this.$refs.input.validate() : true
-      if (!valid) {
+      if (!valid && this.$refs.input) {
         this.$refs.input.focus()
         return false
       }

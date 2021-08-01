@@ -56,7 +56,8 @@ export default {
   },
   computed: {
     getDialogOptions () {
-      return defu({ i18n: this.i18n }, ...this.actionOptions)
+      const actionOptions = this.actionOptions || {}
+      return defu({ i18n: this.i18n }, actionOptions)
     }
   },
   methods: {

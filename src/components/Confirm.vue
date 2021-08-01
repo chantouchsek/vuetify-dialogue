@@ -48,11 +48,15 @@ export default {
   layout: ['default', { width: 450 }],
   mixins: [Iconable, Confirmable, Colorable, Translatable],
   props: {
-    actionOptions: Object
+    actionOptions: {
+      type: Object,
+      default: () => ({})
+    }
   },
   computed: {
     getDialogOptions () {
-      return defu({ i18n: this.i18n }, ...this.actionOptions)
+      const actionOptions = this.actionOptions || {}
+      return defu({ i18n: this.i18n }, actionOptions)
     },
     getText () {
       if (typeof this.text !== 'function') {

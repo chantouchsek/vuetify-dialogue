@@ -57,9 +57,7 @@ exports[`manager Test confirmation with generic options 2`] = `
                 <div
                   class="v-toolbar__title"
                 >
-                  
-      Title
-    
+                  Title
                 </div>
               </div>
             </header>
@@ -79,7 +77,7 @@ exports[`manager Test confirmation with generic options 2`] = `
                
               <button
                 action-key="Foo"
-                class="v-btn v-btn--flat v-btn--text theme--light v-size--default"
+                class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
                 type="button"
               >
                 <span
@@ -94,7 +92,7 @@ exports[`manager Test confirmation with generic options 2`] = `
               </button>
               <button
                 action-key="Bar"
-                class="v-btn v-btn--flat v-btn--text theme--light v-size--default"
+                class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
                 type="button"
               >
                 <span
@@ -109,7 +107,7 @@ exports[`manager Test confirmation with generic options 2`] = `
               </button>
               <button
                 action-key="Baz"
-                class="v-btn v-btn--flat v-btn--text theme--light v-size--default"
+                class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
                 type="button"
               >
                 <span
@@ -118,6 +116,37 @@ exports[`manager Test confirmation with generic options 2`] = `
                   <!---->
                   
   Baz
+  
+                  <!---->
+                </span>
+              </button>
+              <button
+                action-key="false"
+                class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
+                type="button"
+              >
+                <span
+                  class="v-btn__content"
+                >
+                  <!---->
+                  
+  cancel
+  
+                  <!---->
+                </span>
+              </button>
+              <button
+                action-key="true"
+                class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default primary"
+                color="primary"
+                type="button"
+              >
+                <span
+                  class="v-btn__content"
+                >
+                  <!---->
+                  
+  ok
   
                   <!---->
                 </span>
