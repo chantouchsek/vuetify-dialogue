@@ -21,7 +21,7 @@ This module will help you to work with modal dialogs in your project
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
   </a>
   <a href='https://coveralls.io/github/chantouchsek/vuetify-dialogue'><img src='https://coveralls.io/repos/github/chantouchsek/vuetify-dialogue/badge.svg' alt='Coverage Status' /></a>
-  <a href='https://travis-ci.org/chantouchsek/vuetify-dialogue'><img src='https://travis-ci.org/chantouchsek/vuetify-dialogue.svg?branch=main' /></a>
+  <a href='https://travis-ci.com/chantouchsek/vuetify-dialogue'><img src='https://www.travis-ci.com/chantouchsek/vuetify-dialogue.svg?branch=main' /></a>
 </p>
 
 [![FOSSA Status](https://app.fossa.com/projects/custom%2B26852%2Fgit%40github.com-chantouchsek%3Achantouchsek%2Fvuetify-dialogue.svg?type=large)](https://app.fossa.com/projects/custom%2B26852%2Fgit%40github.com-chantouchsek%3Achantouchsek%2Fvuetify-dialogue?ref=badge_large)
