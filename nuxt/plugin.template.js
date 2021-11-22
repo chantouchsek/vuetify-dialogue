@@ -24,6 +24,7 @@ export default (obj, inject) => {
   const instance = Vue.prototype[property]
   if (instance) {
     obj[property] = instance
-    inject(property, instance)
+    const injector = property.replace('$', '')
+    inject(injector, instance)
   }
 }
