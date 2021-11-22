@@ -24,6 +24,6 @@ export default (obj, inject) => {
   const instance = Vue.prototype[property]
   if (instance) {
     obj[property] = instance
-    // inject(property, instance)
+    inject(property, instance)
   }
 }
