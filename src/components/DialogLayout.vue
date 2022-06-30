@@ -73,7 +73,7 @@ export default {
     top: 16px;
     width: 16px;
     height: 16px;
-    font-family: -webkit-pictograph;
+    font-family: -webkit-pictograph, serif;
     font-size: 30px;
     opacity: 0.5;
     z-index: 1000;

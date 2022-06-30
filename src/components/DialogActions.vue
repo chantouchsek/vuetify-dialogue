@@ -1,8 +1,6 @@
 <template>
   <v-card-actions v-if="actionlist && Object.keys(actionlist).length">
-    <v-spacer
-      v-if="!actions.spacer"
-    />
+    <v-spacer v-if="!actions.spacer" />
     <template v-for="action in actionlist">
       <v-spacer
         v-if="action.key === 'spacer'"
@@ -37,6 +35,9 @@ export default {
     flat: Boolean,
     rounded: Boolean,
     outlined: Boolean,
+    isText: Boolean,
+    depressed: Boolean,
+    elevation: [Number, String],
     passive: Boolean,
     block: Boolean,
     large: Boolean,
@@ -49,7 +50,10 @@ export default {
         'flat',
         'rounded',
         'outlined',
+        'depressed',
+        'elevation',
         'icon',
+        'isText',
         'block',
         'small',
         'large',

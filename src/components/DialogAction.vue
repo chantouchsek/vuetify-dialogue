@@ -2,9 +2,11 @@
   <component
     :is="component"
     v-bind="$attrs"
-    :text="flat"
+    :flat="flat"
+    :text="isText"
     :icon="!text && Boolean(icon)"
     :disabled="disabled"
+    :depressed="depressed"
     @click="$emit('click', this)"
     v-on="on"
   >
@@ -37,6 +39,9 @@ export default {
     text: [String, Function],
     disabled: Boolean,
     flat: Boolean,
+    depressed: Boolean,
+    elevation: [Number, String],
+    isText: Boolean,
     icon: Object,
     on: {
       type: Object,
