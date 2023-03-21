@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/chantouchsek/vuetify-dialogue/compare/v0.0.9...v0.0.10) (2023-03-21)
+
+
+### Bug Fixes
+
+* :bug: correct type of prompt ([8efcb15](https://github.com/chantouchsek/vuetify-dialogue/commit/8efcb155dadb71c08f7018c15d54ded369b855ac))
+* :bug: remove some spaces ([1f6f271](https://github.com/chantouchsek/vuetify-dialogue/commit/1f6f27159feb26f1d00ae05d954a7f26d69af788))
+
 ### [0.0.9](https://github.com/chantouchsek/vuetify-dialogue/compare/v0.0.8...v0.0.9) (2022-07-01)
 
 
