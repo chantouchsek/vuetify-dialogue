@@ -87,6 +87,10 @@ export interface DialogConfirmOptions extends DialogActionable {
   width?: number
   value?: any
 }
+export interface DialogPromptOptions extends DialogConfirmOptions {
+  rules: any[]
+  textField: any
+}
 
 interface DialogOptionsWait {
     waitForResult: true
@@ -106,7 +110,7 @@ export interface VuetifyDialogue {
   showAndWait<T = any>(component: object | VueConstructor, props?: Record<string, any>): Promise<T>
   // implemented dialogs
   confirm (options: DialogConfirmOptions): Promise<any>
-  prompt (options: DialogConfirmOptions): Promise<any>
+  prompt (options: DialogPromptOptions): Promise<any>
   warning (options: DialogConfirmOptions): Promise<any>
   error (options: DialogConfirmOptions): Promise<any>
   info (options: DialogConfirmOptions): Promise<any>
