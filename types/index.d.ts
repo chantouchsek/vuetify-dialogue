@@ -26,12 +26,10 @@ export interface DialogAction {
 }
 
 export type DialogActions = Record<string, DialogAction>
-
 interface DialogActionable {
   actions?: Array<string|DialogAction> | Array<DialogAction> | DialogActions | Record<string, string>
   handler? (action: any): void | any
 }
-
 export interface DialogObject<ReturnType = any> {
   show (): Promise<DialogObject> | DialogObject | undefined
   wait (): Promise<ReturnType>
@@ -43,7 +41,6 @@ export interface DialogObject<ReturnType = any> {
   vm: VueConstructor<Vue>
   vmd: Vue.Component
 }
-
 export interface DialogMessageOptions extends DialogActionable {
   color?: string
   position?: string
@@ -58,7 +55,6 @@ export interface DialogMessageOptions extends DialogActionable {
   tile?: boolean
   dense?: boolean
 }
-
 export interface DialogNotifyOptions extends DialogActionable {
   dismissible?: boolean
   position?: string
@@ -74,7 +70,6 @@ export interface DialogNotifyOptions extends DialogActionable {
   outlined?: boolean
   shaped?: boolean
 }
-
 export interface DialogConfirmOptions extends DialogActionable {
   icon?: string | boolean
   persistent?: boolean
@@ -91,7 +86,6 @@ export interface DialogPromptOptions extends DialogConfirmOptions {
   rules: any[]
   textField: any
 }
-
 interface DialogOptionsWait {
     waitForResult: true
     [P: string]: any
